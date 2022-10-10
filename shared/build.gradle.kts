@@ -18,7 +18,7 @@ kotlin {
         podfile = project.file("../iosApp/Podfile")
         name = "MyApplication"
         framework {
-            baseName = "shared"
+            baseName = "MyApplication"
         }
     }
     
