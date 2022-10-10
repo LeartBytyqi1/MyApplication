@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
     spec.vendored_frameworks      = 'build/cocoapods/framework/MyApplication.framework'
     spec.libraries                = 'c++'
     spec.ios.deployment_target = '14.0'
-                
+    spec.dependency 'MyApplication', '1.0'
                 
     spec.pod_target_xcconfig = {
         'KOTLIN_PROJECT_PATH' => ':shared',

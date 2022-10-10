@@ -20,6 +20,9 @@ kotlin {
         framework {
             baseName = "MyApplication"
         }
+        pod("MyApplication"){
+            version = "1.0"
+        }
     }
     
     sourceSets {
