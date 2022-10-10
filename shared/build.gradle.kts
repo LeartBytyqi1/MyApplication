@@ -12,7 +12,7 @@ kotlin {
 
     cocoapods {
         summary = "Some description for the Shared Module"
-        homepage = "Link to the Shared Module homepage"
+        homepage = "https://github.com/LeartBytyqi1/MyApplication.git"
         version = "1.0"
         ios.deploymentTarget = "14.0"
         podfile = project.file("../iosApp/Podfile")
