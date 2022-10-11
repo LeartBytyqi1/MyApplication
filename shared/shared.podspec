@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
     spec.name                     = 'shared'
     spec.version                  = '1.0'
     spec.homepage                 = 'https://github.com/LeartBytyqi1/MyApplication.git'
-    spec.source                   = { :http=> ''}
+    spec.source                   = { :http=> 'https://github.com/LeartBytyqi1/MyApplication.git'}
     spec.authors                  = ''
     spec.license                  = ''
     spec.summary                  = 'Some description for the Shared Module'

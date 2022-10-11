@@ -17,11 +17,7 @@ Pod::Spec.new do |spec|
         'KOTLIN_PROJECT_PATH' => ':shared',
         'PRODUCT_MODULE_NAME' => 'shared',
     }
-    spec.prepare_command = <<-SCRIPT
-          set -ev
-          ./gradlew --no-daemon -Pframework=#{spec.name}.framework linkReleaseFrameworkIos --stacktrace --info
-        SCRIPT
-                
+
     spec.script_phases = [
         {
             :name => 'Build MyApplication',
