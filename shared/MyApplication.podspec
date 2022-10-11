@@ -2,22 +2,20 @@ Pod::Spec.new do |spec|
     spec.name                     = 'MyApplication'
     spec.version                  = '1.0'
     spec.homepage                 = 'https://github.com/LeartBytyqi1/MyApplication.git'
-    spec.source                   = { :git=> 'https://github.com/LeartBytyqi1/MyApplication.git'}
+    spec.source                   = { :http=> ''}
     spec.authors                  = ''
     spec.license                  = ''
     spec.summary                  = 'Some description for the Shared Module'
-    spec.vendored_frameworks      = 'MyApplication'
+    spec.vendored_frameworks      = 'build/cocoapods/framework/shared.framework'
     spec.libraries                = 'c++'
     spec.ios.deployment_target = '14.0'
-
-    spec.static_framework = true
                 
                 
     spec.pod_target_xcconfig = {
         'KOTLIN_PROJECT_PATH' => ':shared',
         'PRODUCT_MODULE_NAME' => 'shared',
     }
-
+                
     spec.script_phases = [
         {
             :name => 'Build MyApplication',
